@@ -1,10 +1,12 @@
-export const mode = 'jit';
-export const purge = ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'];
-export const darkMode = false;
-export const theme = {
+module.exports = {
+  mode: 'jit',
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
     extend: {},
-};
-export const variants = {
+  },
+  variants: {
     extend: {},
-};
-export const plugins = [];
+  },
+  plugins: [],
+}
